@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <title>Neon Shadow Boxer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +20,22 @@
         background-color: #000;
         overflow: hidden;
         color: white;
+        /* Prevent pull-to-refresh on mobile */
+        overscroll-behavior: none;
+        /* Prevent text selection */
+        -webkit-user-select: none;
+        user-select: none;
+        /* Prevent touch callouts */
+        -webkit-touch-callout: none;
+        /* Full height for mobile */
+        height: 100vh;
+        height: 100dvh; /* Dynamic viewport height for mobile */
+      }
+      
+      html {
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
       }
       /* Hide the webcam video element, we process it in background */
       .input_video {
@@ -43,7 +62,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-Bn6uzl51.js"></script>
+  <script type="module" crossorigin src="/assets/index-DAl9_om3.js"></script>
 </head>
   <body>
     <div id="root"></div>
