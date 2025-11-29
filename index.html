@@ -37,9 +37,13 @@
         height: 100dvh;
         overflow: hidden;
       }
-      /* Hide the webcam video element, we process it in background */
+      /* Hide the webcam video element by default, we process it in background */
       .input_video {
         display: none;
+      }
+      /* Show video when it has the show-video-preview class (cast mode or desktop) */
+      .input_video.show-video-preview {
+        display: block !important;
       }
 
       @keyframes loading {
@@ -62,7 +66,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DAl9_om3.js"></script>
+  <script type="module" crossorigin src="/assets/index-n3rAWLkL.js"></script>
 </head>
   <body>
     <div id="root"></div>
